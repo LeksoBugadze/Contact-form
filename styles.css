@@ -1,0 +1,267 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200..800&display=swap');
+
+
+*{
+    font-family: "Karla", sans-serif;
+}
+
+body{
+    background-color: hsl(148, 38%, 91%);
+    Font-size : 17px;
+    color:  hsl(187, 24%, 22%);
+    font-weight: 400;
+}
+
+span{
+    color: hsl(169, 82%, 27%);
+}
+
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+.success-box{
+  display: none;
+  position: fixed;
+  background-color:hsl(187, 24%, 22%);
+  color: white;
+  flex-direction: column;
+  top: 1px;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+
+
+.success-h1{
+    display: flex;
+    font-size: 17px;
+    align-items: center;
+    gap: 10px;
+}
+
+.success-h2{
+   font-size: 15px;
+   font-weight: 400;
+}
+
+
+
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: hsl(0, 0%, 100%);
+    padding: 20px 30px 30px 30px;
+    border-radius: 10px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+
+.input-box1{
+    display: flex;
+    gap: 20px;
+    
+}
+
+.input-box1 div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.input1,.input2{
+    font-size: 17px;
+    border-radius: 5px;
+    border: 1px solid hsl(187, 24%, 22%);
+}
+
+.input1,.input2,.input3,.input4:focus{
+    outline-color:hsl(169, 82%, 27%);
+}
+
+
+.email{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+.input-box2{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+
+
+.input-box2 div{
+    display: flex;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.input-box2 div button{
+    border:1px solid hsl(187, 24%, 22%);
+    padding:15px 150px 15px 15px;
+    border-radius:5px;
+    background-color: transparent;
+    cursor: pointer;
+}
+.input-box2 div button:focus{
+    outline-color:hsl(169, 82%, 27%);
+    background-color:hsl(148, 38%, 91%);
+}
+
+.input3{
+    accent-color: hsl(169, 82%, 27%);
+    vertical-align: middle;
+    transform: scale(1.5);
+    margin: 5px;
+}
+
+.message{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input-box2 div button label{
+    vertical-align: middle;
+    font-size: 17px;
+}
+
+.input4{
+    border:1px solid hsl(187, 24%, 22%);
+    border-radius: 8px;
+    text-align: start;
+    font-size: 17px;
+    overflow-wrap: break-word;
+    white-space: normal;
+    resize: none;
+}
+
+.btn{
+    padding:15px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-weight: 700;
+    background-color: hsl(169, 82%, 27%);
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color:hsl(169, 84%, 17%) ;
+}
+
+.consent label{
+    text-align: center;
+}
+
+.check{
+    vertical-align: middle;
+    accent-color: hsl(169, 82%, 27%);
+    transform: scale(1.2);
+}
+
+
+.error-name,.error-last,.error-email,.error-query,.error-message,.error-consent{
+    color: red;
+    margin-top: 15px;
+}
+
+
+@media (max-width: 600px) {
+    .box {
+        padding: 15px 20px;
+    }
+
+    .input-box1 {
+        flex-direction: column;
+    }
+
+    .input-box2 div {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .input-box2 div button {
+        padding: 10px 20px;
+    }
+
+    .input1, .input2 {
+        padding: 10px 20px;
+    }
+
+    .input4 {
+        padding: 10px 15px 60px 15px;
+    }
+}
+
+
+@media (min-width: 601px) and (max-width: 900px) {
+    .box {
+        padding: 20px 25px;
+    }
+
+    .input-box1 {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .input-box2 div {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .input-box2 div button {
+        padding: 12px 30px;
+    }
+
+    .input1, .input2 {
+        padding: 12px 25px;
+    }
+
+    .input4 {
+        padding: 10px 15px 80px 15px;
+    }
+}
+
+
+@media (min-width: 901px) {
+    .box {
+        max-width: 800px;
+    }
+
+    .input-box1 {
+        flex-direction: row;
+    }
+
+    .input-box2 div {
+        flex-direction: row;
+    }
+
+    .input-box2 div button {
+        padding: 15px 150px 15px 15px;
+    }
+
+    .input1, .input2 {
+        padding: 15px 20px;
+    }
+
+    .input4 {
+        padding: 10px 15px 95px 15px;
+    }
+}
